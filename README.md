@@ -51,7 +51,6 @@ This approach ensures responses are based on actual data rather than purely gene
 | LLM                | Generates responses using retrieved context  |
 | Flask App          | Serves the chatbot interface                 |
 | CI/CD Pipeline     | Automates build, scan, and deployment        |
-| Trivy Scanner      | Ensures container security before deployment |
 
 ---
 
@@ -68,7 +67,6 @@ This approach ensures responses are based on actual data rather than purely gene
 ### DevOps & Cloud Infrastructure
 - Docker
 - Jenkins
-- Aqua Trivy - Security scanning
 - AWS ECR - Container registry
 - AWS Runner / EC2 - Deployment environment
 
@@ -114,15 +112,13 @@ The CI/CD pipeline is fully automated using Jenkins:
 
 1. Code checkout from GitHub
 2. Docker image build
-3. Security scan using Trivy
-4. Image pushed to AWS Elastic Container Registry
-5. Deployment to AWS environment
+3. Image pushed to AWS Elastic Container Registry
+4. Deployment to AWS environment
 
 Stage             | Tool Used
 ----------------- | ---------------------------------------
 Build             | Jenkins
 Containerization  | Docker
-Security Scan     | Trivy
 Image Registry    | AWS ECR
 Deployment        | AWS EC2 / Runner
 
@@ -140,7 +136,6 @@ Deployment        | AWS EC2 / Runner
 - Retrieval-Augmented Generation (RAG) systems
 - Vector search using FAISS
 - LLM integration with real-world data
-- Secure AI deployment with Trivy
 - CI/CD automation using Jenkins
 - Cloud deployment using AWS
 
