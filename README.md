@@ -1,8 +1,8 @@
 # Medical RAG Chatbot
 
-An AI-powered medical chatbot built using Retrieval-Augmented Generation (RAG) that provides accurate, context-aware answers from medical documents. The system is designed with a production-ready architecture, integrating vector search, LLM reasoning, and a fully automated CI/CD pipeline.
+An AI-powered medical chatbot built using Retrieval-Augmented Generation (RAG) that provides accurate, context-aware answers from medical documents. The system is designed with a production-ready architecture, integrating vector search, LLM reasoning
 
-This project demonstrates how to build and deploy a secure, scalable AI application, combining LLMs with efficient retrieval systems and DevOps best practices.
+This project demonstrates how to build and deploy a secure, scalable AI application, combining LLMs with efficient retrieval systems
 
 ---
 
@@ -18,8 +18,6 @@ It handles:
 - Context retrieval for user queries
 - LLM-based response generation
 - Web-based chatbot interface
-- Containerization and CI/CD deployment
-- Security scanning before deployment
 
 The system ensures that responses are grounded in real medical data, reducing hallucinations and improving reliability.
 
@@ -50,7 +48,6 @@ This approach ensures responses are based on actual data rather than purely gene
 | Retriever          | Finds relevant context for user queries      |
 | LLM                | Generates responses using retrieved context  |
 | Flask App          | Serves the chatbot interface                 |
-| CI/CD Pipeline     | Automates build, scan, and deployment        |
 
 ---
 
@@ -64,11 +61,6 @@ This approach ensures responses are based on actual data rather than purely gene
 ### Application Layer
 - Flask
 - HTML/CSS
-### DevOps & Cloud Infrastructure
-- Docker
-- Jenkins
-- AWS ECR - Container registry
-- AWS Runner / EC2 - Deployment environment
 
 ## Core Design Decisions
 
@@ -76,12 +68,8 @@ This approach ensures responses are based on actual data rather than purely gene
 Ensures responses are grounded in real medical documents
 - Vector database usage
 FAISS enables fast and scalable similarity search
-- Secure CI/CD pipeline
-Trivy scans Docker images before deployment
 - Modular architecture
 Clear separation between data processing, retrieval, and generation
-- Production-ready deployment
-Automated pipeline using Jenkins and AWS infrastructure
 ---
 
 ## Getting Started
@@ -106,30 +94,6 @@ Automated pipeline using Jenkins and AWS infrastructure
 
 ---
 
-### CI/CD Deployment
-
-The CI/CD pipeline is fully automated using Jenkins:
-
-1. Code checkout from GitHub
-2. Docker image build
-3. Image pushed to AWS Elastic Container Registry
-4. Deployment to AWS environment
-
-Stage             | Tool Used
------------------ | ---------------------------------------
-Build             | Jenkins
-Containerization  | Docker
-Image Registry    | AWS ECR
-Deployment        | AWS EC2 / Runner
-
-## ☁️ Deployment
-
-- Jenkins handles CI/CD automation
-- Docker containers are built and scanned
-- Images are stored in AWS ECR
-- Application deployed on AWS compute environment
-
----
 
 ## What This Project Demonstrates
 
