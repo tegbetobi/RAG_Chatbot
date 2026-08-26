@@ -100,8 +100,7 @@ Clear separation between data processing, retrieval, and generation
 - Retrieval-Augmented Generation (RAG) systems
 - Vector search using FAISS
 - LLM integration with real-world data
-- CI/CD automation using Jenkins
-- Cloud deployment using AWS
+- Evaluation by benchmarking various metrics
 
 ---
 
